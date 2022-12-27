@@ -1,0 +1,36 @@
+.footer {
+  padding: 0.5rem 0;
+  background: var(--color-grey-900);
+
+  min-height: 4rem;
+  color: var(--color-grey-50);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+}
+
+.container p,
+.container span {
+  margin: 0;
+  padding: 0;
+}
+.container span {
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-primary-100);
+}
+.container p {
+  color: var(--color-grey-200);
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+}
